@@ -85,7 +85,6 @@ The Wazuh agent was installed on Ubuntu and enrolled with the Wazuh manager runn
 
 Once the connection was established, security and system events from the Ubuntu endpoint began appearing in the Wazuh dashboard.
 
-cat >> README.md <<'EOF'
 
 ## Detection and Investigation
 
