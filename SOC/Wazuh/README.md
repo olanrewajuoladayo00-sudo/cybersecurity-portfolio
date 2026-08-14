@@ -1,161 +1,92 @@
-# Wazuh SOC Detection & Threat Intelligence Lab
+# Wazuh SOC Lab
 
 ## Project Overview
 
-This project documents a hands-on Security Operations Center (SOC) lab built using Wazuh. The objective was to deploy a functional SIEM environment, monitor an Ubuntu endpoint, generate controlled security events, investigate alerts, and enrich security findings using external threat intelligence.
+This project demonstrates the deployment and use of Wazuh as a Security Information and Event Management (SIEM) platform in a controlled virtual lab environment.
 
-The lab was conducted in Oracle VM VirtualBox, with Kali Linux configured as the Wazuh server and Ubuntu configured as the monitored endpoint.
-
-The project covered endpoint monitoring, file integrity monitoring, rootkit detection, security alert analysis, and VirusTotal integration for file reputation and threat intelligence enrichment.
-
-## Objectives
-
-- Deploy and configure a Wazuh SIEM environment.
-- Connect and monitor an Ubuntu endpoint using the Wazuh agent.
-- Collect and analyze security events and system activity.
-- Simulate controlled security events for detection testing.
-- Investigate rootkit-related alerts using Diamorphine.
-- Use the EICAR test file to safely simulate malware activity.
-- Configure File Integrity Monitoring (FIM).
-- Integrate Wazuh with VirusTotal for automated file reputation checks.
-- Practice SOC-style alert investigation and threat analysis.
-
-## Lab Environment
-
-| Component | Purpose |
-|---|---|
-| Kali Linux | Wazuh Server / SIEM |
-| Ubuntu Linux | Monitored Endpoint / Wazuh Agent |
-| Oracle VM VirtualBox | Virtualization Platform |
-| Wazuh | SIEM, endpoint monitoring and detection |
-| VirusTotal | Threat intelligence and file reputation |
-| Diamorphine | Controlled rootkit detection simulation |
-| EICAR Test File | Safe malware detection simulation |
-
-
-## Lab Architecture
-
-The lab was built in Oracle VM VirtualBox using two Linux virtual machines:
-
-```text
-                    Wazuh SOC Lab
-
-              ┌─────────────────────┐
-              │     Kali Linux      │
-              │    Wazuh Server     │
-              │                     │
-              │  Wazuh Manager     │
-              │  Wazuh API         │
-              │  Wazuh Dashboard   │
-              └──────────┬──────────┘
-                         │
-                  Security Events
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │      Ubuntu        │
-              │   Wazuh Agent      │
-              │                     │
-              │ System Logs        │
-              │ File Activity      │
-              │ Security Events    │
-              └─────────────────────┘
+The lab was built using Kali Linux as the Wazuh server and Ubuntu Linux as the monitored endpoint.
 
 ## Wazuh Server Deployment
 
-![Wazuh Dashboard](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/01-wazuh-login.jpeg)
+The Wazuh server was deployed on Kali Linux. The following Wazuh components were installed and configured:
 
-Kali Linux was configured as the Wazuh server. The Wazuh components were installed and configured to provide centralized security monitoring and analysis.
+- Wazuh Manager
+- Wazuh API
+- Wazuh Dashboard
 
-The main server components included:
+The Wazuh Dashboard was accessed successfully and used for security monitoring and investigation.
 
--  Wazuh Manager 
--  Wazuh API 
--  Wazuh Dashboard 
-
-After installation, I verified that the required Wazuh services were running and that the dashboard was accessible.
+![Wazuh Dashboard](./screenshots/01-wazuh-login.jpeg)
 
 ## Agent Deployment and Enrollment
 
-![Wazuh Agent Dashboard](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/02-agent-dashboard.jpeg)
-
 Ubuntu Linux was configured as the monitored endpoint.
 
-The Wazuh agent was installed on Ubuntu and enrolled with the Wazuh manager running on Kali Linux. After enrollment, I verified communication between the agent and server.
+The Wazuh agent was installed on Ubuntu and enrolled with the Wazuh Manager running on Kali Linux.
 
-Once the connection was established, security and system events from the Ubuntu endpoint began appearing in the Wazuh dashboard.
+After successful enrollment, security and system events from the Ubuntu endpoint began appearing in the Wazuh Dashboard.
 
+![Wazuh Agent Dashboard](./screenshots/02-agent-dashboard.jpeg)
 
 ## Detection and Investigation
 
-![Suricata Detection](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/05-suricata-detection.jpeg)
+To validate the detection capabilities of the Wazuh environment, suspicious activity was simulated in the controlled lab environment.
 
-To validate the detection capabilities of the Wazuh environment, I simulated suspicious activity on the Ubuntu endpoint and monitored the resulting security events from the Wazuh dashboard.
+Suricata was also deployed to monitor network traffic and generate security alerts.
 
-### Rootkit Detection
+![Suricata Detection](./screenshots/05-suricata-detection.jpeg)
 
-![Diamorphine Rootkit Simulation](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/03-diamorphine-rootkit-simulation.jpeg)
+## Rootkit Detection
 
-![Wazuh Rootkit Detection](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/04-wazuh-rootkit-detection.jpeg)
+The Diamorphine rootkit was used in the controlled lab environment to simulate rootkit-related activity.
 
-I used the Diamorphine rootkit in the controlled lab environment to simulate rootkit-related activity.
+Wazuh was used to detect and investigate the resulting suspicious activity.
 
-Wazuh detected suspicious kernel-level activity and generated high-severity alerts. I reviewed the alerts in the Wazuh dashboard and examined the associated event information to understand the detected behavior.
+![Diamorphine Rootkit Simulation](./screenshots/03-diamorphine-rootkit-simulation.jpeg)
 
-The investigation also showed related security events, including:
+![Wazuh Rootkit Detection](./screenshots/04-wazuh-rootkit-detection.jpeg)
 
-- Possible kernel-level rootkit activity
-- Sudo and privilege-related activity
-- PAM authentication and session events
+## VirusTotal Integration
 
-This exercise helped me understand how a SOC analyst can use SIEM alerts to identify suspicious behavior and investigate potential Indicators of Compromise (IOCs).
+VirusTotal was integrated with Wazuh to support file reputation analysis and threat intelligence enrichment.
 
+![VirusTotal Analysis](./screenshots/06-virustotal-analysis.jpeg)
 
-## Threat Intelligence Integration
+![Wazuh VirusTotal Alert](./screenshots/07-wazuh-virustotal-alert.jpeg)
 
-![VirusTotal Analysis](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/06-virustotal-analysis.jpeg)
+## Alert Investigation
 
-To enrich security alerts with threat intelligence, I integrated Wazuh with VirusTotal for automated file reputation analysis.
+Security alerts generated by the lab activities were reviewed through the Wazuh Dashboard.
 
-### EICAR Test File Simulation
+The alert details were examined to understand the detected activity and support investigation.
 
-![Wazuh VirusTotal Alert](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/07-wazuh-virustotal-alert.jpeg)
-
-![Alert Event Details](https://raw.githubusercontent.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio/master/SOC/Wazuh/screenshots/08-alert-event-details.jpeg)
-
-I used the EICAR test file as a safe and controlled way to simulate malware detection without using actual malicious malware.
-
-The test workflow involved:
-
-- Creating the EICAR test file on the monitored Ubuntu endpoint
-- Using Wazuh File Integrity Monitoring (FIM) to detect the file activity
-- Generating a security alert in Wazuh
-- Extracting the file hash for analysis
-- Querying the hash through VirusTotal
-- Reviewing the resulting antivirus detections
-
-VirusTotal provided additional context by checking the file hash against multiple security engines.
-
-This demonstrated how a SOC analyst can combine SIEM alerts with external threat intelligence to improve alert investigation and determine whether a detected file requires further investigation.
+![Alert Event Details](./screenshots/08-alert-event-details.jpeg)
 
 ## Key Skills Demonstrated
 
-- SIEM deployment and configuration
-- Endpoint monitoring
-- Security event analysis
-- File Integrity Monitoring (FIM)
+- Wazuh SIEM deployment
+- Security monitoring
+- Wazuh agent deployment and enrollment
+- Log analysis
+- Security alert investigation
 - Rootkit detection
-- Threat intelligence integration
-- VirusTotal investigation
-- IOC and file hash analysis
-- Alert investigation and triage
-- Linux security monitoring
+- Suricata network monitoring
+- VirusTotal threat intelligence integration
+- Incident investigation
+- Linux security administration
+- SOC monitoring and analysis
 
-## Key Takeaways
+## Lab Environment
 
-This lab strengthened my understanding of how security monitoring works in a SOC environment.
+| Component | Role |
+|---|---|
+| Kali Linux | Wazuh Server |
+| Ubuntu Linux | Monitored Endpoint |
+| Wazuh | SIEM / Security Monitoring |
+| Suricata | Network Detection |
+| VirusTotal | Threat Intelligence |
+| VirtualBox | Virtual Lab Environment |
 
-I learned that security alerts should not automatically be treated as confirmed threats. Analysts need to investigate the available evidence, understand the context of the alert, correlate related events, and determine the appropriate response.
+## Conclusion
 
-The lab also demonstrated the value of combining SIEM capabilities with threat intelligence to provide additional context during investigations.
-
+This project provided hands-on experience deploying a SIEM solution, onboarding an endpoint, generating security events, investigating alerts, detecting simulated malicious activity, and enriching investigations with threat intelligence.
