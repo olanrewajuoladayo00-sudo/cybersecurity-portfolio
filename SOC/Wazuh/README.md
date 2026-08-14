@@ -63,6 +63,8 @@ The lab was built in Oracle VM VirtualBox using two Linux virtual machines:
 
 ## Wazuh Server Deployment
 
+![Wazuh Dashboard](screenshots/01-wazuh-login.jpeg)
+
 Kali Linux was configured as the Wazuh server. The Wazuh components were installed and configured to provide centralized security monitoring and analysis.
 
 The main server components included:
@@ -75,6 +77,8 @@ After installation, I verified that the required Wazuh services were running and
 
 ## Agent Deployment and Enrollment
 
+![Wazuh Agent Dashboard](screenshots/02-agent-dashboard.jpeg)
+
 Ubuntu Linux was configured as the monitored endpoint.
 
 The Wazuh agent was installed on Ubuntu and enrolled with the Wazuh manager running on Kali Linux. After enrollment, I verified communication between the agent and server.
@@ -85,9 +89,15 @@ cat >> README.md <<'EOF'
 
 ## Detection and Investigation
 
+![Suricata Detection](screenshots/05-suricata-detection.jpeg)
+
 To validate the detection capabilities of the Wazuh environment, I simulated suspicious activity on the Ubuntu endpoint and monitored the resulting security events from the Wazuh dashboard.
 
 ### Rootkit Detection
+
+![Diamorphine Rootkit Simulation](screenshots/03-diamorphine-rootkit-simulation.jpeg)
+
+![Wazuh Rootkit Detection](screenshots/04-wazuh-rootkit-detection.jpeg)
 
 I used the Diamorphine rootkit in the controlled lab environment to simulate rootkit-related activity.
 
@@ -104,9 +114,15 @@ This exercise helped me understand how a SOC analyst can use SIEM alerts to iden
 
 ## Threat Intelligence Integration
 
+![VirusTotal Analysis](screenshots/06-virustotal-analysis.jpeg)
+
 To enrich security alerts with threat intelligence, I integrated Wazuh with VirusTotal for automated file reputation analysis.
 
 ### EICAR Test File Simulation
+
+![Wazuh VirusTotal Alert](screenshots/07-wazuh-virustotal-alert.jpeg)
+
+![Alert Event Details](screenshots/08-alert-event-details.jpeg)
 
 I used the EICAR test file as a safe and controlled way to simulate malware detection without using actual malicious malware.
 
