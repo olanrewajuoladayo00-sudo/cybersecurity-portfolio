@@ -4,7 +4,7 @@ Welcome to my cybersecurity portfolio. This repository documents my hands-on cyb
 
 ## 👨‍💻 About Me
 
-I am building practical skills in cybersecurity and Security Operations Center (SOC) operations through hands-on labs and security projects.
+Cybersecurity enthusiast focused on SOC operations, threat detection, SIEM monitoring, and incident response. I build hands-on projects using Wazuh, Suricata, VirusTotal, Splunk, and Linux to develop practical blue-team skills and investigate security events.
 
 My focus areas include:
 
