@@ -56,3 +56,40 @@ Screenshots from the OpenCTI investigation will be placed in the Task 1 evidence
 ## Conclusion
 
 Task 1 established a structured threat landscape for the simulated Amazon environment. The investigation provides the foundation for the subsequent country-level threat assessment, victim and threat deep dive, and political threat actor analysis.
+## OpenCTI Investigation Evidence
+
+### Evidence 1 – OpenCTI Threat Landscape Overview
+
+![OpenCTI Threat Landscape Overview](shot-000.png)
+
+### Evidence 2 – OpenCTI Threat Activity
+
+![OpenCTI Threat Activity](shot-002.png)
+
+### Evidence 3 – Threat Actor / Intrusion Set Analysis
+
+![Threat Actor Analysis](shot-004.png)
+
+### Evidence 4 – TraderTraitor Analysis
+
+![TraderTraitor Analysis](shot-006.png)
+
+### Evidence 5 – Lazarus Group Analysis
+
+![Lazarus Group Analysis](shot-008.png)
+
+### Evidence 6 – Operation Dream Job Campaign
+
+![Operation Dream Job](shot-010.png)
+
+### Evidence 7 – Victimology Evidence
+
+![Victimology](shot-012.png)
+
+### Evidence 8 – Sector and Country Victimology
+
+![Sector and Country Victimology](shot-014.png)
+
+### Evidence 9 – ModeloRAT Analysis
+
+![ModeloRAT Analysis](shot-016.png)
