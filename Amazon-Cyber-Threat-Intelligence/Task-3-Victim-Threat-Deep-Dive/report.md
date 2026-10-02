@@ -340,3 +340,15 @@ This provides an evidence-based Task 3 assessment while maintaining analytical i
 - Education sector
 - Hospitality sector
 - United States victimology map
+---
+
+## Evidence Screenshots
+
+### Task 3.1 – Victimology Evidence
+![Task 3.1](./task%203.1.png)
+
+### Task 3.2 – Victimology Evidence
+![Task 3.2](./task%203.2.png)
+
+### Task 3.3 – Victimology Evidence
+![Task 3.3](./task%203.3.png)
