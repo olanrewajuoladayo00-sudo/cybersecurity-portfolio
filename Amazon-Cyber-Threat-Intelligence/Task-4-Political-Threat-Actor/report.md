@@ -1,4 +1,3 @@
-cd ~/cybersecurity-portfolio/Amazon-Cyber-Threat-Intelligence/Task-4-Political-Threat-Actor && cat > report.md <<'EOF'
 # Task 4 – Political Threat Actor Analysis
 
 ## Simulated Organization
@@ -195,4 +194,3 @@ The findings should be used as threat intelligence for detection, monitoring, aw
 - MITRE ATT&CK – North Korean threat-actor and technique references
 EOF
 
-git add report.md && git commit -m "Update Task 4 political threat actor analysis" && git push
