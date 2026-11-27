@@ -39,3 +39,44 @@ VirusTotal · DNSChecker · MXToolbox · ICANN/RDAP · CyberChef · email-header
 
 ## Ethical and evidential note
 This project is a portfolio lab, not a real corporate incident. Findings are limited to the evidence described in the report. Synthetic training records, historical threat-intelligence artefacts, and original tool screenshots are distinguished throughout. Do not interpret historical relationships or simulated records as proof of a live compromise.
+## Evidence and Investigation Navigation
+
+The following sections provide access to the investigation process, supporting evidence, technical findings, and final report.
+
+### 1. Email Triage
+- [Simulated Phishing Email](01_Email_Triage/Simulated_Phishing_Email.md)
+- [Email Triage Screenshots](01_Email_Triage/Screenshots/)
+
+### 2. Email Header Analysis
+- [Header Analysis and Limitations](02_Email_Header_Analysis/Header_Analysis_Limitations.md)
+- [Email Header Screenshots](02_Email_Header_Analysis/Screenshots/)
+
+### 3. URL and Domain Investigation
+- [Investigation Notes](03_URL_Domain_Investigation/Investigation_Notes.md)
+- [URL and Domain Investigation Screenshots](03_URL_Domain_Investigation/Screenshots/)
+
+### 4. Endpoint Investigation
+- [Endpoint Investigation Notes](04_Endpoint_Investigation/Endpoint_Investigation_Notes.md)
+- [Endpoint Investigation Screenshots](04_Endpoint_Investigation/Screenshots/)
+
+### 5. Indicators of Compromise (IOCs)
+- [IOC Register – Excel](05_IOCs/PH-001_IOC_Register.xlsx)
+- [IOC Overview](05_IOCs/README.md)
+
+### 6. Incident Response
+- [Incident Response Plan](06_Incident_Response/PH-001_Incident_Response_Plan.md)
+
+### 7. MITRE ATT&CK Mapping
+- [MITRE ATT&CK Mapping – CSV](07_MITRE_ATT%26CK/PH-001_MITRE_ATT%26CK_Mapping.csv)
+
+### 8. Evidence Register
+- [Evidence Register – CSV](08_Evidence_Index/PH-001_Evidence_Register.csv)
+- [Screenshot Capture Guide](08_Evidence_Index/SCREENSHOT_CAPTURE_GUIDE.md)
+
+### 9. Final Investigation Report
+- [Read Final Report – PDF](Final_Report/PH-001_Investigation_Report.pdf)
+- [Download Editable Report – Word](Final_Report/PH-001_Investigation_Report.docx)
+
+---
+
+**Recruiter Note:** This portfolio demonstrates a simulated SOC investigation using hands-on analysis, historical threat intelligence, original tool screenshots, and simulated training records. Evidence limitations are documented throughout the project.
