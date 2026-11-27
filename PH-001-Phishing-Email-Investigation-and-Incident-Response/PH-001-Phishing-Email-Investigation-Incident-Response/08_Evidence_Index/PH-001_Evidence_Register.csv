@@ -1,0 +1,10 @@
+Evidence_ID,Evidence_Name,Source,Evidence_Type,Key_Observation,Limitations
+EV-001,Simulated Phishing Email,Training Scenario,Simulated Email,Suspicious sender and lookalike domain,Not a real received email
+EV-002,Email Header Analysis,MXToolbox,Synthetic Header Analysis,Header parsing exercise completed,No genuine email headers supplied
+EV-003,URL Reputation, VirusTotal,Historical Threat Intelligence,14 detections in one historical analysis view,Historical result; not proof of current malicious activity
+EV-004,Domain and DNS Investigation,ICANN RDAP and DNS Tools,Domain Intelligence,Registrar and inconclusive DNS lookup observations,Lookup failures do not prove records are absent
+EV-005,Related DOCX Sample,VirusTotal,Historical File Intelligence,18 detections out of 66 vendors,Not confirmed as the email attachment
+EV-006,Related LNK Sample,VirusTotal,Historical File Intelligence,3 detections out of 60 vendors,Not confirmed as an endpoint artifact
+EV-007,Endpoint Process Activity,Simulated Training Records,Simulated Endpoint Logs,WINWORD to PowerShell to CMD process chain,Not collected from a real endpoint
+EV-008,Identity Sign-in Activity,Simulated Training Records,Simulated Identity Logs,Unfamiliar failed sign-ins recorded,No unfamiliar successful sign-in identified
+EV-009,Incident Containment,Simulated Training Records,Incident Response Record,FINANCE-PC-01 isolation recorded,Recovery validation pending
