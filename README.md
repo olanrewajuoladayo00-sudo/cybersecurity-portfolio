@@ -1,41 +1,47 @@
-# PH-001: Phishing Email Investigation and Incident Response
+# Oladayo Timothy Olanrewaju
 
-## Project overview
-A SOC Analyst Level 1 portfolio case study demonstrating a structured investigation of a simulated Microsoft 365-themed phishing email targeting a fictional Finance employee at GlobalTech Solutions.
+**Aspiring Cybersecurity Analyst | SOC Analysis | Threat Detection | Incident Response**
 
-The investigation covers email triage, lookalike-domain and URL analysis, DNS and registrar checks, historical threat-intelligence pivots, endpoint and identity-event interpretation, incident scoping, incident-response planning, and MITRE ATT&CK mapping.
+Welcome to my cybersecurity portfolio. I am an aspiring cybersecurity professional focused on Security Operations Centre (SOC) operations, security monitoring, threat detection, and incident response.
 
-> **Project context:** This is a hands-on cybersecurity lab investigation. The phishing scenario and selected endpoint, proxy, identity, and containment records are simulated training material. Original screenshots captured from VirusTotal, DNSChecker, MXToolbox, ICANN/RDAP, and CyberChef are included as investigation evidence. Historical related-file intelligence is not presented as a confirmed email attachment or endpoint artefact.
+This repository showcases my practical cybersecurity projects, technical investigations, virtual labs, and security reports developed through hands-on training and continuous professional development.
 
-## Key findings
-- The simulated email used the lookalike domain `micros0ft.com` and the URL `https://micros0ft.com/verify`.
-- VirusTotal URL report screenshots displayed 14/91 and 14/90 detections in separate views.
-- DNSChecker and MXToolbox showed failed or timed-out lookups; these results are inconclusive and do not prove that DNS records are absent.
-- ICANN/RDAP showed GoDaddy.com, LLC as the registrar in the captured record.
-- Historical DOCX and LNK samples appeared in VirusTotal related-file intelligence; neither is confirmed as the email attachment or a file from the simulated endpoint.
-- Synthetic endpoint records illustrate suspicious Office-to-PowerShell and PowerShell-to-command-shell activity. They are training records, not live endpoint telemetry.
-- The available evidence does not establish credential theft, malware installation, account takeover, or data exfiltration.
+## Technical Skills and Tools
 
-## Repository structure
+- **SIEM and Security Monitoring:** Splunk, Wazuh
+- **Network Traffic Analysis:** Wireshark
+- **Network Intrusion Detection:** Suricata
+- **Operating Systems:** Kali Linux, Ubuntu
+- **Threat Intelligence:** VirusTotal, AbuseIPDB, URLScan
+- **Investigation:** Log analysis, alert investigation, network traffic analysis, and evidence-based reporting
 
-| Folder | Contents |
-|---|---|
-| `01_Email_Triage/` | Simulated phishing email and triage notes |
-| `02_Email_Header_Analysis/` | Header analysis and limitations, with original screenshots |
-| `03_URL_Domain_Investigation/` | VirusTotal, DNSChecker, ICANN/RDAP and CyberChef screenshots |
-| `04_Endpoint_Investigation/` | Endpoint investigation notes and historical related-file screenshots |
-| `05_IOCs/` | IOC register |
-| `06_Incident_Response/` | Incident response plan |
-| `07_MITRE_ATT&CK/` | MITRE ATT&CK mapping |
-| `08_Evidence_Index/` | Evidence register, original screenshot index and capture guide |
-| `Evidence_Screenshots/` | Clearly identified synthetic training screenshots |
-| `Final_Report/` | Final investigation report in Word, PDF and Markdown formats |
+## Featured Projects
 
-## Main deliverable
-- `Final_Report/PH-001_Phishing_Email_Investigation_Report.docx`
+### 1. Wireshark Network Traffic Analysis
 
-## Tools and concepts
-VirusTotal · DNSChecker · MXToolbox · ICANN/RDAP · CyberChef · email-header analysis · Windows Event Logs · PowerShell logging · Sysmon · proxy investigation · MITRE ATT&CK · incident response
+Analysed DNS, TCP, HTTP, and TLS traffic to examine network communications, investigate unusual activity, and document findings based on packet-level evidence.
 
-## Ethical and evidential note
-This project is a portfolio lab, not a real corporate incident. Findings are limited to the evidence described in the report. Synthetic training records, historical threat-intelligence artefacts, and original tool screenshots are distinguished throughout. Do not interpret historical relationships or simulated records as proof of a live compromise.
+### 2. SOC Monitoring and Detection with Splunk
+
+Developed practical skills in authentication log analysis, failed-login detection, suspicious source IP investigation, and identifying potential brute-force activity.
+
+### 3. Wazuh SIEM and Endpoint Monitoring
+
+Configured a virtual lab to explore security event monitoring, endpoint visibility, alert investigation, and threat intelligence integration.
+
+### 4. Amazon Cyber Threat Intelligence Assessment
+
+Conducted a threat intelligence assessment covering the cyber threat landscape, country-level threats, targeted victims, and politically motivated threat actors relevant to Amazon.
+
+## Professional Development
+
+I continuously strengthen my cybersecurity knowledge through structured training, practical labs, security investigations, and independent projects.
+
+## Career Objective
+
+Seeking entry-level opportunities in cybersecurity, particularly SOC analysis and security operations, where I can contribute to security monitoring, alert triage, threat detection, and incident response while continuing to develop my technical expertise.
+
+## Contact
+
+- **GitHub:** [olanrewajuoladayo00-sudo](https://github.com/olanrewajuoladayo00-sudo)
+- **LinkedIn:** [Oladayo Timothy Olanrewaju](https://www.linkedin.com/in/oladayo-olanrewaju-988a142b8/)
