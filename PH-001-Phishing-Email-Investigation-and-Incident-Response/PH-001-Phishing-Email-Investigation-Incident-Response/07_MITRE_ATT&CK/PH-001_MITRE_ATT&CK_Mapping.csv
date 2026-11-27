@@ -1,0 +1,6 @@
+Case_ID,Tactic,Technique_ID,Technique_Name,Observation,Evidence_Status
+PH-001,Initial Access,T1566.002,Spearphishing Link,Suspicious link included in simulated phishing email,Scenario-based
+PH-001,Execution,T1204.002,Malicious File,Potential malicious file interaction; not confirmed,Potential
+PH-001,Execution,T1059.001,PowerShell,Simulated PowerShell activity involving WebClient DownloadString,Simulated evidence
+PH-001,Execution,T1059.003,Windows Command Shell,Simulated cmd.exe execution,Simulated evidence
+PH-001,Discovery,T1033,System Owner/User Discovery,Simulated whoami command execution,Simulated evidence
