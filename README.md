@@ -143,7 +143,7 @@ I actively develop my cybersecurity knowledge through practical learning platfor
 
 I also enjoy researching cybersecurity topics and writing security-related educational content.
 
-## 🎯 Career Interests
+##  Career Interests
 
 I'm actively interested in opportunities in:
 
