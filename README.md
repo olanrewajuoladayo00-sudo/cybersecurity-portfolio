@@ -4,7 +4,7 @@
 
 Hello! I'm Oladayo, an aspiring Cybersecurity Analyst from Nigeria with a strong interest in Security Operations, threat detection, incident investigation and defensive security.
 
-I'm an **ISC2 Certified in Cybersecurity (CC)** professional, currently preparing for CompTIA Security+ (SY0-701), and continuously developing my technical skills through hands-on cybersecurity labs, practical investigations, internship activities and independent projects.
+I'm an **ISC2 Certified in Cybersecurity (CC)** Certified professional, currently preparing for CompTIA Security+ (SY0-701), and continuously developing my technical skills through hands-on cybersecurity labs, practical investigations, internship activities and independent projects.
 
 My focus is on building the technical knowledge and practical experience required to identify threats, investigate security incidents, analyse suspicious activities and help organisations strengthen their security posture.
 
