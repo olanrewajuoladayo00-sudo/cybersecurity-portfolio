@@ -1,47 +1,122 @@
 # Oladayo Timothy Olanrewaju
 
-**Aspiring Cybersecurity Analyst | SOC Analysis | Threat Detection | Incident Response**
+### Aspiring Cybersecurity Analyst | SOC Analyst | Blue Team | Threat Intelligence
 
-Welcome to my cybersecurity portfolio. I am an aspiring cybersecurity professional focused on Security Operations Centre (SOC) operations, security monitoring, threat detection, and incident response.
+Hello! I'm Oladayo, an aspiring Cybersecurity Analyst from Nigeria with a strong interest in Security Operations, threat detection, incident investigation and defensive security.
 
-This repository showcases my practical cybersecurity projects, technical investigations, virtual labs, and security reports developed through hands-on training and continuous professional development.
+I'm an **ISC2 Certified in Cybersecurity (CC)** professional, currently preparing for CompTIA Security+ (SY0-701), and continuously developing my technical skills through hands-on cybersecurity labs, practical investigations and independent projects.
 
-## Technical Skills and Tools
+My focus is on building the knowledge and practical experience required to identify threats, investigate security incidents, analyse suspicious activities and help organisations strengthen their security posture.
 
-- **SIEM and Security Monitoring:** Splunk, Wazuh
-- **Network Traffic Analysis:** Wireshark
-- **Network Intrusion Detection:** Suricata
-- **Operating Systems:** Kali Linux, Ubuntu
-- **Threat Intelligence:** VirusTotal, AbuseIPDB, URLScan
-- **Investigation:** Log analysis, alert investigation, network traffic analysis, and evidence-based reporting
+---
 
-## Featured Projects
+## 🛡️ Core Areas of Interest
 
-### 1. Wireshark Network Traffic Analysis
+- Security Operations Centre (SOC)
+- Security Monitoring and Log Analysis
+- Threat Detection and Investigation
+- Phishing Email Analysis
+- Digital Forensics and Incident Response
+- Threat Intelligence and IOC Analysis
+- Endpoint Security
+- Network Security
+- Cloud Security
+- MITRE ATT&CK Framework
 
-Analysed DNS, TCP, HTTP, and TLS traffic to examine network communications, investigate unusual activity, and document findings based on packet-level evidence.
+## 🧰 Technical Skills and Tools
 
-### 2. SOC Monitoring and Detection with Splunk
+| Category | Tools and Technologies |
+|---|---|
+| SIEM | Wazuh, Splunk Enterprise |
+| Threat Intelligence | VirusTotal, AlienVault OTX |
+| Network Security | Wireshark, Suricata, Nmap |
+| Investigation | CyberChef, MITRE ATT&CK |
+| Operating Systems | Kali Linux, Ubuntu, Windows |
+| Virtualisation | Oracle VM VirtualBox |
+| Cloud Security | Microsoft Azure, Microsoft Defender for Cloud |
+| Scripting and Analysis | PowerShell, Linux command line |
 
-Developed practical skills in authentication log analysis, failed-login detection, suspicious source IP investigation, and identifying potential brute-force activity.
+## 🚀 Featured Cybersecurity Projects
 
-### 3. Wazuh SIEM and Endpoint Monitoring
+### 1. PH-001 – Phishing Email Investigation and Incident Response
 
-Configured a virtual lab to explore security event monitoring, endpoint visibility, alert investigation, and threat intelligence integration.
+A structured SOC investigation of a simulated phishing incident targeting a Finance employee.
 
-### 4. Amazon Cyber Threat Intelligence Assessment
+**What I worked on:**
 
-Conducted a threat intelligence assessment covering the cyber threat landscape, country-level threats, targeted victims, and politically motivated threat actors relevant to Amazon.
+- Phishing email triage and analysis
+- Email header investigation
+- URL and domain reputation analysis
+- Historical threat intelligence investigation
+- Endpoint activity analysis
+- Indicators of Compromise (IOC) documentation
+- MITRE ATT&CK technique mapping
+- Incident response recommendations
 
-## Professional Development
+**Tools:** VirusTotal, MXToolbox, DNSChecker, ICANN RDAP, CyberChef and MITRE ATT&CK.
 
-I continuously strengthen my cybersecurity knowledge through structured training, practical labs, security investigations, and independent projects.
+[Explore My Cybersecurity Portfolio and Investigation Evidence](https://github.com/olanrewajuoladayo00-sudo/cybersecurity-portfolio)
 
-## Career Objective
+*Note: This is a simulated training investigation using historical threat intelligence and selected synthetic records. Evidence limitations are documented.*
 
-Seeking entry-level opportunities in cybersecurity, particularly SOC analysis and security operations, where I can contribute to security monitoring, alert triage, threat detection, and incident response while continuing to develop my technical expertise.
+### 2. Wazuh SIEM Home Lab
 
-## Contact
+A hands-on security monitoring environment focused on deploying Wazuh, connecting monitored endpoints and investigating security events.
 
-- **GitHub:** [olanrewajuoladayo00-sudo](https://github.com/olanrewajuoladayo00-sudo)
-- **LinkedIn:** [Oladayo Timothy Olanrewaju](https://www.linkedin.com/in/oladayo-olanrewaju-988a142b8/)
+**Key learning areas:**
+
+- SIEM deployment and configuration
+- Endpoint monitoring
+- Security event collection
+- Log analysis
+- Threat detection and investigation
+
+### 3. Splunk Security Monitoring and Failed Login Detection
+
+A security monitoring project focused on analysing authentication logs and identifying suspicious login behaviour.
+
+**Key learning areas:**
+
+- Authentication log analysis
+- Failed and successful login monitoring
+- Brute-force detection
+- Source IP investigation
+- SOC dashboard development
+
+## 🎓 Certifications and Professional Development
+
+- **ISC2 Certified in Cybersecurity (CC)** – Certified
+- **CompTIA Security+ (SY0-701)** – Currently preparing
+
+## 📚 Continuous Learning
+
+I actively develop my cybersecurity knowledge through practical learning platforms and technical training:
+
+- TryHackMe
+- Hack The Box
+- LetsDefend
+- Cisco Networking Academy
+- Microsoft Learn
+- TS Academy
+
+I also enjoy researching cybersecurity topics and writing security-related educational content.
+
+## 🎯 Career Interests
+
+I'm actively interested in opportunities in:
+
+- Junior SOC Analyst
+- Security Operations Analyst
+- Junior Cybersecurity Analyst
+- Blue Team Analyst
+- Junior Incident Response Analyst
+
+Open to entry-level roles, internships, mentorship opportunities and professional collaborations, including remote opportunities.
+
+## 🤝 Let's Connect
+
+I'm always interested in connecting with cybersecurity professionals, recruiters, mentors and people passionate about information security.
+
+- **LinkedIn:** [Connect with me](https://www.linkedin.com/in/oladayo-olanrewaju-988a142b8/)
+- **GitHub:** [Explore my repositories](https://github.com/olanrewajuoladayo00-sudo)
+
